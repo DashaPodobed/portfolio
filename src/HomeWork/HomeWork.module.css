@@ -1,0 +1,20 @@
+.homeWorkBlock {
+    height: 50vh;
+    background-color: #eeb7b7;
+
+}
+
+.homeWorkContainer {
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.title {
+    background-color: burlywood;
+}
+
+.button {
+    align-items: center;
+}
