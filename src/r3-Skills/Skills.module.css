@@ -1,0 +1,31 @@
+.skillsBlock {
+    height: 100vh;
+    position: relative;
+    background-color: #333;
+    background-image: url("/src/assets/Image/62e2aaec6e7384384a1b7055bbfb3421.jpeg");
+    background-size: 100%;
+}
+.skillsBlock:before {
+    content: '';
+    position: absolute; left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+}
+.skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    background-color: burlywood;
+}
+
+.skills {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}

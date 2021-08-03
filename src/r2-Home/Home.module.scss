@@ -1,0 +1,121 @@
+/*.homeBlock {*/
+/*    height: 100vh;*/
+/*    background-color: #deb887;*/
+/*}*/
+
+/*.text {*/
+/*    width: 300px;*/
+/*    background-color: rosybrown;*/
+/*}*/
+/*.photo {*/
+/*    width: 300px;*/
+/*    height: 400px;*/
+/*    background-color: rosybrown;*/
+/*}*/
+
+.mainBlock {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 100px 0;
+    background-color: #181818;
+
+    .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        //opacity: 0.3;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .greeting {
+        color: #eeeeee;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        span {
+            font-size: 16px;
+            &:nth-child(2) {
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: 700;
+                letter-spacing: 5px;
+                margin: 10px 0;
+                span {
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 50px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    letter-spacing: 5px;
+                    position: relative;
+                    z-index: 0;
+                    display: inline-block;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 20px;
+                        background-color: burlywood;
+                        bottom: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 28px;
+                line-height: 1.8;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+        @media screen and (max-width: 1143px) {
+            align-items: center;
+        }
+    }
+    .photo {
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: 1143px){
+            margin-top: 50px;
+        }
+        .image {
+            height: 400px;
+            width: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("../assets/Image/Снимок экрана 2021-06-04 в 15.45.00.png");
+            background-position: 80% 0;
+            @media screen and (max-width: 600px){
+               height: 360px;
+                width: 260px;
+                transition: .5s;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                height: 110%;
+                width: 105%;
+                border: 5px solid burlywood;
+                left: 15px;
+                top: -15px;
+                z-index: -1;
+            }
+        }
+    }
+}

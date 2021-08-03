@@ -1,0 +1,31 @@
+.nav {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin-right: 10px;
+
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #cccccc;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: #C49B66;
+    }
+  }
+
+  .active {
+    color: #C49B66;
+  }
+
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+}
