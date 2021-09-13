@@ -2,20 +2,21 @@ import React from 'react'
 import style from './Nav.module.scss'
 import {Link} from 'react-scroll'
 
+export const LinkComponent = (props) => {
+    return (
+        <Link
+            activeClass={style.active}
+            to={props.path}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+        >{props.title}
+        </Link>
+    )
+}
 const Nav = () => {
-     const LinkComponent = (props) => {
-        return (
-            <Link
-                activeClass={style.active}
-                to={props.path}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-            >{props.title}
-            </Link>
-        )
-    }
+
 
     return (
         <div className={style.nav}>

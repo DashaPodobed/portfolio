@@ -1,0 +1,36 @@
+@import "../Common/Components/Button/Button.module";
+.homeWorkBlock {
+    height: 50vh;
+    background-color: #333;
+    .homeWorkContainer {
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+            font-family: 'Josefin Sans', sans-serif;
+            color: #eee;
+            /*background-color: burlywood;*/
+        }
+        .button {
+            @extend .btn;
+            align-self: center;
+            background-color: transparent;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+//.button {
+//    font-family: 'Josefin Sans', sans-serif;
+//    align-items: center;
+//    width: 100px;
+//    height: 30px;
+//    background-color: #C49B66;;
+//}
+
+
