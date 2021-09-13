@@ -17,11 +17,11 @@ const Skills = () => {
                 <Fade bottom>
                     <div className={style.skills}>
                         <Skill title={"React"} icon={<FontAwesomeIcon icon={faReact}/>}
-                               description={"types of texts and interactive exercises that practise , to get "}/>
+                               description={"A JavaScript library for building user interfaces"}/>
                         <Skill title={"JS"} icon={<FontAwesomeIcon icon={faJs}/>}
-                               description={"the reading skills you need to do well in your studies,"}/>
+                               description={"A programming language"}/>
                         <Skill title={"CSS"} icon={<FontAwesomeIcon icon={faCss3}/>}
-                               description={"ahead at work and to communicate in English"}/>
+                               description={"A style sheet language used for describing the presentation of a document written in a markup language such as HTML"}/>
                     </div>
                 </Fade>
             </div>

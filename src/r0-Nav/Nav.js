@@ -3,7 +3,7 @@ import style from './Nav.module.scss'
 import {Link} from 'react-scroll'
 
 const Nav = () => {
-    const LinkComponent = (props) => {
+     const LinkComponent = (props) => {
         return (
             <Link
                 activeClass={style.active}
@@ -16,6 +16,7 @@ const Nav = () => {
             </Link>
         )
     }
+
     return (
         <div className={style.nav}>
             <LinkComponent path={"home"} title={"Home"}/>

@@ -9,7 +9,7 @@ const Contacts = () => {
         <div id="contacts" className={style.contactsBlock}>
             <div className={style.contactsContainer}>
                 <Title title={"Contacts"}/>
-                <Fade bottom>
+                <Fade>
                     <form className={style.form}>
                         <input type="text" className={style.formArea} placeholder="Name"/>
                         <input type="text" className={style.formArea} placeholder="e-mail"/>

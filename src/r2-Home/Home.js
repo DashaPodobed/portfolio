@@ -66,7 +66,7 @@ const Home = () => {
                 <div className={style.container}>
                     <div className={style.greeting}
                     >
-                        <span>Hello</span>
+                        <span></span>
                         <span>I am Darya <span>Podobed</span></span>
                         <ReactTypingEffect
                             text={"Frontend Developer"}

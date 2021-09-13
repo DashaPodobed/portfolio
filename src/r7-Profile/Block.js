@@ -5,7 +5,7 @@ import style from ".//Profile.module.css"
 const Block = (props) => {
     return (
         <div>
-            <a href='' className={style.block}>{props.icon}</a>
+            <a href={props.href} className={style.block}>{props.icon}</a>
         </div>
     )
 }
