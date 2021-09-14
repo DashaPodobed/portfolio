@@ -23,7 +23,7 @@ const Nav = () => {
             <LinkComponent path={"home"} title={"Home"}/>
             <LinkComponent path={"skills"} title={"Skills"}/>
             <LinkComponent path={"projects"} title={"Projects"}/>
-            <LinkComponent path={"contacts"} title={"Contacts"}/>
+            <LinkComponent path={"contacts"} title={"Contact me"}/>
         </div>
     );
 }

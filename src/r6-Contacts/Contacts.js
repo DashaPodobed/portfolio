@@ -22,7 +22,7 @@ const Contacts = () => {
     return (
         <div id="contacts" className={style.contactsBlock}>
             <div className={style.contactsContainer}>
-                <Title title={"Contacts"}/>
+                <Title title={"Сontact me"}/>
                 <Fade>
                     <form className={style.form} onSubmit={handleSubmit}>
                         <input

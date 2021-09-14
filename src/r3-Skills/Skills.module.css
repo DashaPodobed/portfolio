@@ -10,6 +10,7 @@
     position: absolute; left: 0; right: 0; top: 0; bottom: 0;
     background: rgba(0,0,0,0.7);
 }
+
 .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
@@ -27,5 +28,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
 
+@media screen and (max-width: 347px){
+    .skills {
+        justify-content: center;
+        flex-wrap: initial;
+    }
 }
