@@ -25,11 +25,13 @@ const Projects = () => {
                 <Fade bottom>
                     <div className={style.projects}>
                         <Project style={social1}
-                                 title={"TodoList"}
-                                 description={"My First Project."}/>
+                                 title={"Counter"}
+                                 description={"My first Training Project"}
+                                 href={"https://dashapodobed.github.io/Counter/"}
+                        />
                         <Project style={social2}
                                  title={"Cards"}
-                                 description={"My Second Project."}
+                                 description={"Cards for studying JavaScript, React"}
                                  href={"https://dashapodobed.github.io/friday/"}/>
                     </div>
                 </Fade>
