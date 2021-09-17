@@ -2,6 +2,7 @@ import React from 'react'
 import style from './Contacts.module.scss'
 import Title from "../Common/Components/Title/Title";
 import Fade from 'react-reveal/Fade';
+import axios from "axios";
 
 
 const Contacts = () => {
@@ -11,9 +12,12 @@ const Contacts = () => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log('name:', name);
-        console.log('email:', email);
-        console.log('message:', message);
+        axios.post('https://smtp-project-server.herokuapp.com/sendMessage', {name, email, message})
+            .then(res => {
+                console.log('name:', name);
+                console.log('email:', email);
+                console.log('message:', message);
+            })
         setName('')
         setEmail('')
         setMessage('')
